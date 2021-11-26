@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta tags-->
+    <meta name="description" content="Estudio Contable, servicios a empresas y monotributistas, liquidación de sueldos y jornales, asesoramiento impositivo y societario.">
+    <meta name="keywords" content="Estudio Contable, servicios, empresas, monotributistas, responsables inscriptos, contabilidad, sueldos, jornales, liquidación, asesoramiento, impositivo, societario">    
+    <meta name="author" content="Fernando Mancevich" />
+    <meta name="copyright" content="Main IT" />    
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./icons/logo.png" type="image/x-icon" media="all">
+    <title>Estudio Total Contable | Servicios contables para Empresas, Monotributistas y Responsables Inscriptos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.webp" alt="Logo" class="rounded-circle">
+                &nbsp;Estudio Total Contable
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" 
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/estudio.html">El Estudio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>    
+                </ul>
+            </div>  
+        </nav>
+    </header>
+          
+    <main>
+        <section id="seccionContenido">
+
+            <h2 class="seccionTitulo">Servicios</h2>
+
+            <!-- carousel con cards de servicios -->
+            <div id="carouselServicios" class="carousel slide container" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#carouselServicios" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselServicios" data-slide-to="1"></li>
+                    <li data-target="#carouselServicios" data-slide-to="2"></li>
+                    <li data-target="#carouselServicios" data-slide-to="3"></li>
+                    <li data-target="#carouselServicios" data-slide-to="4"></li>
+                    <li data-target="#carouselServicios" data-slide-to="5"></li>
+                </ul>    
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="cardServ carousel-item active">
+                        <img src="./images/responsables-inscriptos.webp" alt="">
+                        <div class="cardServContainer">
+                            <p>Responsables Inscriptos</p> 
+                            <a href="./pages/servicios.html#responsablesInscriptos" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="cardServ carousel-item">
+                        <img src="./images/asesoramiento-empresas.jpg" alt="">
+                        <div class="cardServContainer">
+                            <p>Servicios a Empresas</p> 
+                            <a href="./pages/servicios.html#serviciosEmpresas" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="cardServ carousel-item">
+                        <img src="./images/monotributistas.jpg" alt="">
+                        <div class="cardServContainer">
+                            <p>Monotributistas</p> 
+                            <a href="./pages/servicios.html#serviciosMonotributistas" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="cardServ carousel-item">
+                        <img src="./images/asesoramiento-impositivo.jpg" alt="">
+                        <div class="cardServContainer">
+                            <p>Asesoramiento Impositivo</p> 
+                            <a href="./pages/servicios.html#asesoramientoImpositivo" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="cardServ carousel-item">
+                        <img src="./images/liquidacion-sueldos.jpg" alt="">
+                        <div class="cardServContainer">
+                            <p>Liquidación de Sueldos</p> 
+                            <a href="./pages/servicios.html#liquidacionSueldos" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="cardServ carousel-item">
+                        <img src="./images/asesoramiento-societario.jpg" alt="">
+                        <div class="cardServContainer">
+                            <p>Asesoramiento Societario</p> 
+                            <a href="./pages/servicios.html#asesoramientoSocietario" class="btn stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carouselServicios" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselServicios" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <div class="container-fluid">
+                <h2 class="seccionTitulo">Próximos Vencimientos</h2>
+                <section id="seccionTabla">
+                    <table id="tabla" caption="Novedades Impositivas" 
+                           class="table table-warning table-striped table-bordered">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Impuesto</th>
+                            <th>Novedad</th>
+                        </tr>
+                        <tr>
+                            <td>05/11/2021</td>
+                            <td>Autónomos</td>
+                            <td>Vencimiento CUITs terminados del 0 al 3</td>
+                        </tr>
+                        <tr>
+                            <td>08/11/2021</td>
+                            <td>Autónomos</td>
+                            <td>Vencimiento CUITs terminados del 4 al 6</td>
+                        </tr>
+                        <tr>
+                            <td>09/11/2021</td>
+                            <td>Autónomos</td>
+                            <td>Vencimiento CUITs terminados del 7 al 9</td>
+                        </tr>
+                        <tr>
+                            <td>09/11/2021</td>
+                            <td>Empleadores</td>
+                            <td>Vencimiento CUITs terminados del 0 al 3</td>
+                        </tr>
+                        <tr>
+                            <td>10/11/2021</td>
+                            <td>Empleadores</td>
+                            <td>Vencimiento CUITs terminados del 4 al 6</td>
+                        </tr>
+                        <tr>
+                            <td>11/11/2021</td>
+                            <td>Empleadores</td>
+                            <td>Vencimiento CUITs terminados del 7 al 9</td>
+                        </tr>
+                        <tr>
+                            <td>10/11/2021</td>
+                            <td>Casas Particulares, pago obligatorio</td>
+                            <td>Cualquier terminación de CUIT</td>
+                        </tr>
+                        <tr>
+                            <td>15/11/2021</td>
+                            <td>Casas Particulares, pago voluntario</td>
+                            <td>Cualquier terminación de CUIT</td>
+                        </tr>
+                        <tr>
+                            <td>18/11/2021</td>
+                            <td>IVA y Libro de IVA Digital</td>
+                            <td>Vencimiento CUITs terminados del 0 al 3</td>
+                        </tr>
+                        <tr>
+                            <td>23/11/2021</td>
+                            <td>IVA y Libro de IVA Digital</td>
+                            <td>Vencimiento CUITs terminados del 4 al 6</td>
+                        </tr>
+                        <tr>
+                            <td>25/11/2021</td>
+                            <td>IVA y Libro de IVA Digital</td>
+                            <td>Vencimiento CUITs terminados del 7 al 9</td>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid pt-2">
+        <div class="row">
+            <div class="copywright col-3">
+            <span id="copywright">&copy;&nbsp;Main IT 2021</span>
+            </div>
+            <div class="mailContacto col-6">
+                <i class="far fa-envelope"></i>                
+                <span id="mailContacto">&nbsp;info@totalcontable.com.ar</span>
+            </div>
+            <div class="redesSociales col-3">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+</body>
+
+</html>
