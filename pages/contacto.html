@@ -46,7 +46,7 @@
     </header>
 
     <main>
-        <section id="formContacto">
+        <section id="formContacto" class="container-fluid">
             <h2 class="seccionTitulo">Contacto</h2>
             <seccion id="seccionContenido">
                 <div class="formTitulo text-center">
@@ -56,37 +56,30 @@
                 </div>
 
                 <form id="formContenido" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-                    <div class="formFila">
-                        <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text" name="nombre" placeholder="nombre y apellido completos">
+                    <div class="formFila form-group row">
+                        <label class="formLabel" for="nombre">Nombre</label>
+                        <input class="formInput" id="nombre" type="text" name="nombre" placeholder=" nombre y apellido completos">
                     </div>
-                    <div class="formFila">
-                        <label for="email">email</label>
-                        <input id="email" type="email" name="email" required>
+                    <div class="formFila form-group row">
+                        <label class="formLabel" for="email">email</label>
+                        <input class="formInput" id="email" type="email" name="email" required>
                     </div>
-                    <div class="formFila">
-                        <label for="telefono">Teléfono</label>
-                        <input id="telefono" type="telefono" name="telefono"><br>
+                    <div class="formFila form-group row">
+                        <label class="formLabel" for="telefono">Teléfono</label>
+                        <input class="formInput" id="telefono" type="telefono" name="telefono"><br>
                     </div>
-                    <div class="formFila">
-                        <label>Tipo Contribuyente:&nbsp;</label>
-                        <label for="inscripto">Responsable Inscripto</label>
-                        <input type="radio" name="tcontrib" value="inscripto" id="inscripto">
-                        <label for="monotributista">Monotributista</label>
-                        <input type="radio" name="tcontrib" value="monotributista" id="monotributista">
-                        <label for="empresa">Empresa</label>
-                        <input type="radio" name="tcontrib" value="empresa" id="empresa">
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="tcontrib" value="otro" id="otro"><br>
+                    <div class="formFila form-group row">
+                        <label class="formLabel">Tipo Contribuyente</label>
+                        <select class="formInput" name="tcontrib" id="tipoContribuyente">
+                            <option value="inscripto">Responsable Inscripto</option>
+                            <option value="empresa">Empresa</option>
+                            <option value="monotributista">Monotributista</option>
+                            <option value="otro">Otro</option>
+                        </select>
                     </div>
-                    <div class="formFila">
-                        <label for="">Deseo recibir información por email</label>
-                        <label for="informacion"></label>
-                        <input type="checkbox" name="informacion" value="0" id="informacion"><br>
-                    </div>
-                    <div class="formFila">
-                        <label for="comentario">Comentarios</label>
-                        <textarea id="comentario" name="comentario" placeholder="escriba aqui"></textarea>
+                    <div class="formFila form-group row">
+                        <label class="formLabel" for="comentario">Comentarios</label>
+                        <textarea class="formInput" id="comentario" name="comentario" placeholder=" escriba aqui"></textarea>
                     </div>
                     <!-- botones -->
                     <!-- <input type="submit" class="btnEnviar formButton" value="Enviar">

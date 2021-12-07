@@ -11,11 +11,6 @@
 /* font-awesome iconos redes sociales */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
 
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Work Sans', sans-serif; */
-    /* font-family: 'Mukta', sans-serif; */
-    /* font-family: 'Libre Franklin', sans-serif; */
-
     $colorFondo: #ffde59;
     $colorSeccionTitulo: #686767;
     $fontSeccionTitulo: 'Libre Franklin', sans-serif;
@@ -31,6 +26,7 @@
 }
 
 /*--- Cabecera de páginas ---*/
+/*****************************/
 .navbar  {
     background-image: linear-gradient(to right, #fcce18, #fae48b, #fcce18); 
     color: white;
@@ -72,6 +68,16 @@ main {
 }
 
 /*--- Main ---*/
+/**************/
+@keyframes aparecer {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+ }
+
 .seccionTitulo {
     padding: 15px 15px 0px 15px;
     width: 100%;
@@ -86,15 +92,6 @@ main {
     animation-duration: 2s;
     animation-name: aparecer;
 } 
-
-@keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
- }
 
 main {
     padding-top: 60px;
@@ -111,10 +108,11 @@ main {
 }
 
 /* Pie de paginas */
+/******************/
 footer  {
     height: 38px;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Work Sans', sans-serif;
     text-shadow: 4px 4px 5px #868585;
     background-image: linear-gradient(to right, #fcce18, #fae48b, #fcce18); 
@@ -129,10 +127,15 @@ footer .redesSociales {
 }
 
 /*--- index.html ---*/
+/********************/
 #carouselServicios {
     margin: 40px;
     text-align: center;
 }
+
+// .carousel-inner .cardServ {
+//     background-color: #b4aeae;
+// }
 
 .carousel-inner .cardServ img {
     width: 680px; 
@@ -142,6 +145,7 @@ footer .redesSociales {
     box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
     transition: 0.3s;
     border: solid 2px lightgray;
+    background-color: rgb(251, 251, 251, 0.7);
   }
 
 .carousel-inner .cardServ p {
@@ -214,6 +218,7 @@ footer .redesSociales {
 }
 
 /*--- estudio.html ---*/
+/**********************/
 #elEstudio {
     width: 100%;
     height: 100%;
@@ -231,6 +236,7 @@ footer .redesSociales {
 }
 
 /*--- nosotros.html ---*/
+/***********************/
 #sobreNosotros {
     align-content: center;
     font-family: 'Mukta', sans-serif;
@@ -251,6 +257,7 @@ footer .redesSociales {
 }
 
 /*--- servicios.html ---*/
+/************************/
 #seccionServicios {
     width: 100%;
     margin: 0 auto;
@@ -291,8 +298,6 @@ footer .redesSociales {
 @for $i from 1 through 6 {
     .imagenServicio-#{$i} {
         width: 340px;
-        // max-width: 100%;
-        // height: auto;
         height: 200px;
         padding-top: 10px;
         @if $i%2 == 0 {
@@ -324,7 +329,7 @@ footer .redesSociales {
     background-color: #ffffff;
     border: 1px solid #d3d1d1;
     box-shadow: 0px 0px 4px 4px #f3f3f3; 
-    opacity: 0.7;
+    opacity: 70%;
 }
 
 #detalleServicios .bloqueServicio h3 {
@@ -345,7 +350,9 @@ footer .redesSociales {
 #detalleServicios .bloqueServicio .detServicio li {
     list-style: disc outside;
 }    
+
 /* noticias.html */
+/*****************/
 #noticias {
     color: #504848;
     font-family: 'Libre Franklin', sans-serif;
@@ -389,8 +396,78 @@ footer .redesSociales {
     font-size: 15px;
 }
 
-/* noenc.html */
+/* contacto.html */
+/*****************/
+#formContacto {
+    background-color: white;
+    opacity: 80%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
 
+.formTitulo {
+    color: #665e5e;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#formContenido {
+    font-size: 15px;
+}
+
+.formFila {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$formLabelWidth: 170px; 
+$formInputWidth: 500px; 
+
+#formContenido .formFila .formLabel {
+    padding: 0px 15px;
+    text-align: left;
+    width: $formLabelWidth;
+}
+
+#formContenido .formFila .formInput {
+    width: $formInputWidth;
+}
+#formContenido .formFila #comentario {
+    height: 100px;
+}
+
+$botones: (
+    success: #4fbe4f, 
+    warning: #e7c78b
+);
+
+@each $boton, $bkcolor, $bkcolor2 in $botones {
+
+    .formButton {
+        border: none;
+        padding: 6px 25px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px 10px; 
+        cursor: pointer;
+        outline: none;
+        color: #504848;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 3px 6px #d3d3d3;
+    }
+    
+    .btn-#{$boton} {
+        background-color: $bkcolor;
+    } 
+}
+
+/* noenc.html */
+/**************/
 .noEncontrada {
     width: 100%;
     height: 100vh;
@@ -405,6 +482,7 @@ footer .redesSociales {
 }
 
 /* media queries */
+/*****************/
 @media only screen and (max-width: 480px) {
 
     header .navbar .navbar-brand img {
@@ -414,6 +492,41 @@ footer .redesSociales {
     header .navbar .navbar-brand {
         font-size: 12px;
     }
+
+    #carouselServicios {
+        margin: 0px;
+    }
+    
+    .carousel-inner .cardServ img {
+        width: 200px; 
+        height: 80px;
+        padding: 3px;
+      }
+    
+    .carousel-inner .cardServ p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        color: #969393;
+        font-weight: bold;
+      }
+    
+    .carousel-indicators {
+        margin: 0px;
+        height: 0px;
+    }
+    
+    .carousel-indicators li{
+        height: 3px;
+        width: 12px;
+    }
+   
+    .carousel-control-next-icon:after {
+        font-size: 10px;
+    }
+
+    .carousel-control-prev-icon:after {
+        font-size: 10px;
+    }  
 
     /* Pie de paginas */
     footer  {
@@ -425,7 +538,6 @@ footer .redesSociales {
         padding: 0px 10px 5px;
         font-size: 10px;
     }
-    
 }
 
 @media only screen and (max-width: 768px) {
@@ -437,7 +549,35 @@ footer .redesSociales {
     header .navbar .navbar-brand {
         font-size: 15px;
     }
+
+    #carouselServicios {
+        margin: 5px;
+        text-align: center;
+    }
     
+    .carousel-inner .cardServ img {
+        width: 480px; 
+        height: 220px;
+        padding: 10px;
+      }
+    
+    .carousel-inner .cardServ p {
+        font-size: 15px;
+      }
+    
+    .carousel-indicators li {
+        height: 3px;
+        width: 12px;
+    }
+   
+    .carousel-control-next-icon:after {
+        font-size: 30px;
+    }
+
+    .carousel-control-prev-icon:after {
+        font-size: 30px;
+    }  
+
     #tabla th {
         font-size: 14px;
         padding: 5px 10px 5px 10px;
@@ -459,6 +599,18 @@ footer .redesSociales {
         text-align: left;
         font-size: 12px;
     }
+
+    $formLabelWidth: 120px; 
+    $formInputWidth: 350px; 
+
+    #formContenido .formFila .formLabel {
+        width: $formLabelWidth;
+    }
+    
+    #formContenido .formFila .formInput {
+        width: $formInputWidth;
+    }
+    
 }
 
 @media only screen and (max-width: 1024px) {
@@ -485,78 +637,4 @@ footer .redesSociales {
         text-align: left;
         font-size: 15px;
     }
-}
-
-/* contacto.html */
-#formContacto {
-    background-color: white;
-    opacity: 80%;
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-}
-
-.formTitulo {
-    color: #665e5e;
-    font-size: 20px;
-    padding-top: 10px;
-}
-
-#formContenido {
-    font-size: 15px;
-}
-
-.formFila {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.formFila label {
-    padding: 0px 10px;
-}
-
-#formContenido #nombre {
-    width: 350px;
-}
-
-#formContenido #email {
-    width: 300px;
-}
-
-#formContenido #telefono {
-    width: 300px;
-}
-
-#formContenido #comentario {
-    width: 350px;
-    height: 100px;
-}
-
-$botones: (
-    success: #4fbe4f, 
-    warning: #e7c78b
-);
-
-@each $boton, $bkcolor, $bkcolor2 in $botones {
-
-    .formButton {
-        border: none;
-        padding: 6px 25px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        margin: 20px 10px; 
-        cursor: pointer;
-        outline: none;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 3px 6px #d3d3d3;
-    }
-    
-    .btn-#{$boton} {
-        background-color: $bkcolor;
-    } 
 }
