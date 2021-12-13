@@ -124,6 +124,10 @@ footer .mailContacto {
   text-align: center;
 }
 
+footer .mailContacto a, footer .redesSociales a {
+  color: white;
+}
+
 footer .redesSociales {
   text-align: right;
 }
@@ -447,7 +451,7 @@ footer .redesSociales {
 }
 
 .formFila {
-  padding-top: 20px;
+  padding-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,38 +537,18 @@ footer .redesSociales {
   }
 
   #carouselServicios {
-    margin: 0px;
+    margin: 20px 0px 10px 0px;
   }
 
   .carousel-inner .cardServ img {
-    width: 200px;
-    height: 80px;
-    padding: 3px;
+    width: 360px;
+    height: 150px;
+    padding: 0px;
   }
 
-  .carousel-inner .cardServ p {
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    color: #969393;
-    font-weight: bold;
-  }
-
-  .carousel-indicators {
-    margin: 0px;
-    height: 0px;
-  }
-
-  .carousel-indicators li {
-    height: 3px;
-    width: 12px;
-  }
-
-  .carousel-control-next-icon:after {
-    font-size: 10px;
-  }
-
-  .carousel-control-prev-icon:after {
-    font-size: 10px;
+  .carousel-control-next-icon:after,
+.carousel-control-prev-icon:after {
+    font-size: 20px;
   }
 
   /* Pie de paginas */
@@ -588,18 +572,17 @@ footer .redesSociales {
   }
 
   #carouselServicios {
-    margin: 5px;
-    text-align: center;
+    margin: 30px 0px 60px 0px;
   }
 
   .carousel-inner .cardServ img {
-    width: 480px;
-    height: 220px;
-    padding: 10px;
+    width: 420px;
+    height: 180px;
+    padding: 4px;
   }
 
-  .carousel-inner .cardServ p {
-    font-size: 15px;
+  .carousel-inner .carousel-item .cardServ .cardServContainer p {
+    font-size: 18px;
   }
 
   .carousel-indicators li {
@@ -607,23 +590,19 @@ footer .redesSociales {
     width: 12px;
   }
 
-  .carousel-control-next-icon:after {
-    font-size: 30px;
-  }
-
-  .carousel-control-prev-icon:after {
-    font-size: 30px;
+  .carousel-control-next-icon:after,
+.carousel-control-prev-icon:after {
+    font-size: 24px;
   }
 
   #tabla th {
     font-size: 14px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
   }
 
   #tabla td {
     font-size: 10px;
-    padding-left: 3px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px;
   }
 
   /* Pie de paginas */

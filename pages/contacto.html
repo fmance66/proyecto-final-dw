@@ -58,7 +58,11 @@
                 <form id="formContenido" action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
                     <div class="formFila form-group row">
                         <label class="formLabel" for="nombre">Nombre</label>
-                        <input class="formInput" id="nombre" type="text" name="nombre" placeholder=" nombre y apellido completos">
+                        <input class="formInput" id="nombre" type="text" name="nombre" placeholder=" nombre completo">
+                    </div>
+                    <div class="formFila form-group row">
+                        <label class="formLabel" for="apellido">Apellido</label>
+                        <input class="formInput" id="apellido" type="text" name="apellido" placeholder=" apellido completo">
                     </div>
                     <div class="formFila form-group row">
                         <label class="formLabel" for="email">email</label>
@@ -79,7 +83,7 @@
                     </div>
                     <div class="formFila form-group row">
                         <label class="formLabel" for="comentario">Comentarios</label>
-                        <textarea class="formInput" id="comentario" name="comentario" placeholder=" escriba aqui"></textarea>
+                        <textarea class="formInput" id="comentario" name="comentario" placeholder=" escríbanos aquí"></textarea>
                     </div>
                     <!-- botones -->
                     <!-- <input type="submit" class="btnEnviar formButton" value="Enviar">
@@ -94,20 +98,28 @@
     <!-- Footer -->
     <footer>
         <div class="container-fluid pt-2">
-        <div class="row">
-            <div class="copywright col-3">
-            <span id="copywright">&copy;&nbsp;Main IT 2021</span>
+            <div class="row">
+                <div class="copywright col-3">
+                    <span id="copywright">&copy;&nbsp;Main IT 2021</span>
+                </div>
+                <div class="mailContacto col-6">
+                    <a href="mailto:info@totalcontable.com.ar?Subject=Contacto%20desde%20la%20web" title="Enviar correo">
+                        <i class="far fa-envelope"></i>                
+                        <span id="mailContacto">&nbsp;info@totalcontable.com.ar</span>
+                    </a>
+                </div>
+                <div class="redesSociales col-3">
+                    <a href="https://www.instagram.com/totalcontable/" title="Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=es" title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://es-la.facebook.com/" title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
             </div>
-            <div class="mailContacto col-6">
-                <i class="far fa-envelope"></i>                
-                <span id="mailContacto">&nbsp;info@totalcontable.com.ar</span>
-            </div>
-            <div class="redesSociales col-3">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook-f"></i>
-            </div>
-        </div>
         </div>
     </footer>
     <!-- Footer -->
