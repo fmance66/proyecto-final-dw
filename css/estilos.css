@@ -53,6 +53,7 @@
 
 main {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../images/fondo.webp");
+  width: 100%;
   height: auto;
   background-size: cover;
   background-attachment: fixed;
@@ -130,6 +131,8 @@ footer .mailContacto a, footer .redesSociales a {
 
 footer .redesSociales {
   text-align: right;
+  font-size: 20px;
+  letter-spacing: 5px;
 }
 
 /*--- index.html ---*/
@@ -229,6 +232,7 @@ footer .redesSociales {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  padding: 30px;
 }
 
 .estudioImagen img {
@@ -236,7 +240,7 @@ footer .redesSociales {
   height: auto;
   opacity: 60%;
   z-index: 2;
-  padding: 30px;
+  box-shadow: 1px 0px 10px 5px #000000bf;
 }
 
 .estudioTexto {
@@ -247,20 +251,25 @@ footer .redesSociales {
 /***********************/
 #sobreNosotros {
   align-content: center;
-  font-family: "Mukta", sans-serif;
-  color: #747171;
+}
+
+.nosotrosImagen {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 #sobreNosotros img {
   width: 100%;
-  padding: 20px;
+  height: auto;
+  box-shadow: 1px 0px 10px 5px #000000bf;
   opacity: 70%;
   z-index: 2;
 }
 
 #sobreNosotros p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   padding-top: 4px;
 }
 
@@ -286,11 +295,11 @@ footer .redesSociales {
 }
 
 .cardServicio {
-  width: 400px;
+  width: 360px;
   height: auto;
   border: 1px solid #d3d1d1;
-  box-shadow: 0px 0px 4px 4px #f3f3f3;
-  margin-top: 40px;
+  box-shadow: 0px 0px 4px 4px #d1d0d0;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -557,6 +566,10 @@ footer .redesSociales {
     font-size: 10px;
   }
 
+  footer .redesSociales {
+    font-size: 12px;
+  }
+
   .video h3 {
     padding: 0px 10px 5px;
     font-size: 10px;
@@ -609,6 +622,10 @@ footer .redesSociales {
   footer {
     height: 34px;
     font-size: 12px;
+  }
+
+  footer .redesSociales {
+    font-size: 14px;
   }
 
   .video h3 {
