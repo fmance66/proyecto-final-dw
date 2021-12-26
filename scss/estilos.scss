@@ -510,20 +510,20 @@ $botones: (
     }
 
     #carouselServicios {
-        margin: 20px 0px 10px 0px;
+        margin: 20px 10px 10px 10px;
     }
     
     .carousel-inner .cardServ img {
-        width: 360px; 
-        height: 150px;
+        width: 240px; 
+        height: 120px;
         padding: 0px;
-      }
+    }
 
-      .carousel-control-next-icon:after, 
-      .carousel-control-prev-icon:after {
+    .carousel-control-next-icon:after, 
+    .carousel-control-prev-icon:after {
           font-size: 20px;
-      }  
-      
+    }  
+
     /* Pie de paginas */
     footer  {
         height: 30px;

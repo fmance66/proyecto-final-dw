@@ -546,12 +546,12 @@ footer .redesSociales {
   }
 
   #carouselServicios {
-    margin: 20px 0px 10px 0px;
+    margin: 20px 10px 10px 10px;
   }
 
   .carousel-inner .cardServ img {
-    width: 360px;
-    height: 150px;
+    width: 240px;
+    height: 120px;
     padding: 0px;
   }
 
