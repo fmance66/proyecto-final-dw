@@ -545,14 +545,14 @@ footer .redesSociales {
     font-size: 12px;
   }
 
-  #carouselServicios {
-    margin: 20px 10px 10px 10px;
+  #carouselServicios .cardServ {
+    margin: auto;
+    padding: 0px 20px;
   }
 
   .carousel-inner .cardServ img {
     width: 240px;
     height: 120px;
-    padding: 0px;
   }
 
   .carousel-control-next-icon:after,
